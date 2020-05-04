@@ -70,13 +70,13 @@ if __name__ == '__main__':
             wdir=cwd)
     
         
-    print('merging dataframes')
-    runfile(cwd + '\\' + 'merge.py', \
-            wdir=cwd)
-    
-        
-        
+    # print('merging dataframes')
+    # runfile(cwd + '\\' + 'merge.py', \
+    #         wdir=cwd)
     from merge import webDf
+
+
+
     """filtering and tuning descriptions"""
 
     df = webDf.loc[(webDf.qty>0) | \

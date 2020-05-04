@@ -12,7 +12,7 @@ import numpy as np
 #%%
 #merge
 
-df1 = pd.read_pickle('fromRetailPro')
+df1 = pd.read_pickle('withOctoparseData')
 df2 = pd.read_pickle('fromMagento')
 df2.columns = ['styleSID','itemSID','UPC',\
                # 'image_0',\

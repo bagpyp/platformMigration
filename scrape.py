@@ -32,4 +32,4 @@ dfOP.UPC = dfOP.UPC.astype(str).fillna('0'*13).apply(lambda x: makeN(x,13))
 
 df = pd.merge(df,dfOP,how='left',left_on='UPC',right_on='UPC')
 
-df.to_pickle('fromRetailPro')
+df.to_pickle('withOctoparseData')
